@@ -100,21 +100,25 @@ RETURN
 ## 📂 Repository Structure
 
 ```
-├── data/                  # Simulated datasets (CSV format)
+├── data/                  # Simulated datasets (Contains 4 generated CSV files, ~74k+ dynamic rows)
+├── pbix_dashboard/       # Power BI Dashboard file (.pbix)
 ├── sql_scripts/           # Production-ready SQL scripts
-│   ├── 01_funnel_analysis.sql
-│   └── 02_cohort_generation.sql
-├── pbix_dashboard/        # Power BI Dashboard file (.pbix)
 └── README.md              # Project documentation
 ```
 
 ---
 
+## 📈 Dataset Execution Summary & Insights
 
 
-## 📈 Key Metrics & Insights Template
 
-*(To Be Updated Post-Execution)*
+### 📊 Dataset Scale (Generated Metrics)
+
+- **Total App Downloads (**`Dim_User`**):** 6,000 users.
+- **Total Onboarding Logs (**`Fact_User_Events`**):** 25,508 events tracking the 5-stage eKYC pipeline.
+- **Total Financial Logs (**`Fact_Transactions`**):** 42,567 transaction records spanning Jan 2026 - Jun 2026.
+
+
 
 ### 📌 Tab 1: eKYC Funnel Performance
 

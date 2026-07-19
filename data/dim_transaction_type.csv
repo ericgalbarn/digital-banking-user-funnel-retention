@@ -1,0 +1,4 @@
+transaction_type_id,transaction_type_name
+TX_TRF,Chuyen_Tien
+TX_QR,Quet_QR_Pay
+TX_SAV,Gui_Tiet_Kiem_So
