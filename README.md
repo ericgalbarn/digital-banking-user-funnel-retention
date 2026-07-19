@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This is an engineering-focused analytics solution built to optimize the user onboarding experience and long-term retention within **ABBank's Digital Banking platform**. By implementing **Conversion Funnel Analysis** and **Cohort Retention Analysis**, this project identifies critical bottlenecks in the digital registration (eKYC) pipeline and evaluates user loyalty over time.
+This is an engineering-focused analytics solution built to optimize the user onboarding experience and long-term retention within **Digital Banking platform**. By implementing **Conversion Funnel Analysis** and **Cohort Retention Analysis**, this project identifies critical bottlenecks in the digital registration (eKYC) pipeline and evaluates user loyalty over time.
 
 ---
 
