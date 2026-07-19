@@ -108,6 +108,8 @@ RETURN
 
 ---
 
+
+
 ## 📈 Dataset Execution Summary & Insights
 
 
@@ -121,11 +123,35 @@ RETURN
 
 
 ### 📌 Tab 1: eKYC Funnel Performance
-*   **Overall Conversion:** **68.38%** of app downloads result in a fully verified and created account. This sits comfortably within the **55% - 70%** good industry standard for Digital Banking & Fintech onboarding.
-*   **The Friction Point:** The largest drop-off occurs at the **4_Face_Matching** stage with a massive **19.99% drop-off rate** (nearly 1 in every 5 users who scan their ID fail to complete the face selfie check). Meanwhile, other stages (OTP, CCCD Scan, Final Account Creation) exhibit high efficiency with drop-off rates strictly controlled under **~5%**.
+
+- **Overall Conversion:** **68.38%** of app downloads result in a fully verified and created account. This sits comfortably within the **55% - 70%** good industry standard for Digital Banking & Fintech onboarding.
+- **The Friction Point:** The largest drop-off occurs at the **4_Face_Matching** stage with a massive **19.99% drop-off rate** (nearly 1 in every 5 users who scan their ID fail to complete the face selfie check). Meanwhile, other stages (OTP, CCCD Scan, Final Account Creation) exhibit high efficiency with drop-off rates strictly controlled under **~5%**.
+
+
 
 #### 📊 Visualized Funnel Performance
-![eKYC Funnel Performance](screenshot/01_ekyc_funnel_performance.png)
+
+eKYC Funnel Performance
+
+### 🔍 Deep-Dive Segmentations (Device OS Breakdown)
+
+To uncover the root cause of the 19.99% drop-off at the Face Matching stage, the data was segmented by `device_os`:
+
+
+| Device OS   | Users Finished CCCD | Users Finished Face | Face Matching Dropouts | Face Matching Drop-off Rate |
+| ----------- | ------------------- | ------------------- | ---------------------- | --------------------------- |
+| **Android** | 2,660               | 2,023               | 637                    | **23.95%**                  |
+| **iOS**     | 2,742               | 2,299               | 443                    | **16.16%**                  |
+
+
+
+
+#### 💡 Core Insights & Actionable Recommendations:
+
+1. **Android Technical Friction (Priority 1):** Android users experience a massive **23.95% drop-off rate** (nearly 8% higher than iOS). This indicates a strong probability of technical bugs, camera initialization issues, or optimization failures across diverse Android devices. **Action:** Assign Mobile QA/Engineering teams to stress-test the eKYC module on top Android models.
+2. **Universal UX Obstacles (Priority 2):** Even on iOS, a **16.16% drop-off** is sub-optimal. This points to generic UX friction, such as unclear selfie instructions, tight timeout limits, or rigid lighting requirements. **Action:** Redesign UI guidelines with animations to guide users smoothly through the facial scan.
+
+
 
 ### 📌 Tab 2: User Retention Heatmap
 
