@@ -131,7 +131,7 @@ RETURN
 
 #### 📊 Visualized Funnel Performance
 
-eKYC Funnel Performance
+![eKYC Funnel Performance](screenshot/01_ekyc_funnel_performance.png)
 
 ### 🔍 Deep-Dive Segmentations (Device OS Breakdown)
 

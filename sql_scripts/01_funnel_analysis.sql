@@ -1,3 +1,6 @@
+-- Project: Digital Banking User Funnel & Retention Optimization
+-- Script: 01_funnel_analysis.sql
+-- Description: Calculates the step-by-step eKYC onboarding funnel conversion and drop-off rates.
 WITH funnel_stages AS (
   SELECT
     COUNT(DISTINCT CASE WHEN event_name = '1_Download_App' THEN user_id END) AS step_1_download,
