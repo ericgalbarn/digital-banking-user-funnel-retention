@@ -124,7 +124,8 @@ RETURN
 *   **Overall Conversion:** **68.38%** of app downloads result in a fully verified and created account. This sits comfortably within the **55% - 70%** good industry standard for Digital Banking & Fintech onboarding.
 *   **The Friction Point:** The largest drop-off occurs at the **4_Face_Matching** stage with a massive **19.99% drop-off rate** (nearly 1 in every 5 users who scan their ID fail to complete the face selfie check). Meanwhile, other stages (OTP, CCCD Scan, Final Account Creation) exhibit high efficiency with drop-off rates strictly controlled under **~5%**.
 
-
+#### 📊 Visualized Funnel Performance
+![eKYC Funnel Performance](screenshots/01_ekyc_funnel_performance.png)
 
 ### 📌 Tab 2: User Retention Heatmap
 
