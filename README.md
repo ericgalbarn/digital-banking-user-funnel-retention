@@ -17,12 +17,16 @@ This is an engineering-focused analytics solution built to optimize the user onb
 Download App → Input Phone/OTP → Scan CCCD (eKYC) → Face Matching → Account Created
 ```
 
+
+
 ### 2. Cohort Retention Analysis
 
 - **The Problem:** Monthly Active Users (MAU) can be a vanity metric if driven purely by short-term promo campaigns while existing users quietly churn.
 - **The Framework:** Time-based cohorts grouped by `Account_Created_Month` to track subsequent financial transactions (Transfers, QR Pays, Savings) from Month 0 to Month 6.
 
 ---
+
+
 
 ## 📐 Data Architecture & Schema (Star Schema)
 
@@ -46,7 +50,11 @@ To ensure optimal performance in Power BI, the dataset (~100,000 rows) is modele
 
 ---
 
+
+
 ## 💻 Core Technical Implementations (Code Highlights)
+
+
 
 ### 1. SQL Funnel Sequencing (Window Functions)
 
@@ -61,6 +69,8 @@ SELECT
 FROM fact_user_events
 GROUP BY event_name;
 ```
+
+
 
 ### 2. Power BI DAX for Dynamic Cohort Retention
 
@@ -85,6 +95,8 @@ RETURN
 
 ---
 
+
+
 ## 📂 Repository Structure
 
 ```
@@ -98,22 +110,33 @@ RETURN
 
 ---
 
+
+
 ## 📈 Key Metrics & Insights Template
+
 *(To Be Updated Post-Execution)*
 
 ### 📌 Tab 1: eKYC Funnel Performance
+
 - **Overall Conversion:** Only **X%** of app downloads result in a fully verified account.
-- **The Friction Point:** The largest drop-off occurs at the **[Insert Step, e.g., Scan CCCD]** stage (**Y%** drop), heavily skewed towards **[Insert Segment, e.g., Android Devices]**, indicating an OS-specific hardware integration bug.
+- **The Friction Point:** The largest drop-off occurs at the **[Insert Step, e.g., Scan CCCD]** stage (**Y%** drop), heavily 
+- skewed towards **[Insert Segment, e.g., Android Devices]**, indicating an OS-specific hardware integration bug.
+
+
 
 ### 📌 Tab 2: User Retention Heatmap
+
 - **Month 1 Baseline:** Average Month 1 Retention stands at **A%**.
 - **Churn Cliff:** A severe engagement drop-off is detected at **Month B** (**< C%**), signaling a failure in mid-funnel user re-engagement.
 - **Sticky Feature:** Users engaging with **[Insert Feature, e.g., Digital Savings]** exhibit a **D×** higher Customer Lifetime Value (LTV).
 
 ---
 
+
+
 ## 💡 Data-Driven Recommendations
 
 1. **Tech Intervention:** Deploy client-side error logging on the **[Insert Step]** screen to capture image processing failures in real time.
 2. **Marketing Automation:** Trigger automated push notifications with targeted zero-fee incentives within 24 hours for users stalled post-OTP verification.
 3. **Product Feature Promotion:** Re-architect the app's home screen to surface **[Insert High-Value Feature]** immediately after onboarding to lock in early user retention.
+
